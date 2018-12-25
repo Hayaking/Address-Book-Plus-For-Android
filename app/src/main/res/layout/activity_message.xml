@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MessageActivity">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/msg"
+        android:scrollbars="vertical"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#b7b4b4">
+
+        <EditText
+            android:id="@+id/msg_ed"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#cecece" />
+
+        <Button
+            android:id="@+id/msg_bt"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/msg_ed"
+            android:background="#676767"
+            android:text="发送"
+            android:onClick="send"
+            />
+    </RelativeLayout>
+</RelativeLayout>

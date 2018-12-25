@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.History"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_marginVertical="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#f5f5f5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/about_avator"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/about_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toEndOf="@id/about_avator"
+                android:orientation="vertical"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:id="@+id/about_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/about_qrbt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:padding="0dp"
+                android:contentDescription="TODO" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/about"
+            android:layout_margin="0dp"
+            android:background="#dbd8d8"
+            android:padding="0dp"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button2"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button1"
+            android:background="#dbd8d8"
+            android:text="Button" />
+        <Button
+            android:id="@+id/button3"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button2"
+            android:background="#dbd8d8"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
